@@ -1,7 +1,9 @@
 import ExpenseItems from "./ExpenseItem"
+import './ExpensesList.css'
 
 const ExpenseList = ({item}) => {
-
+  if(item.length===0){
+    return <h2 className="">Found no Expense</h2>
   return (
     <ul>
       {item.map((expenses) =>
@@ -12,5 +14,5 @@ const ExpenseList = ({item}) => {
         date={expenses.date} />))}
     </ul>
   )
-}
+}}
 export default ExpenseList
