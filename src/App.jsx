@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NewExpense from "./component/NewExpense";
 import Expenses from "./component/Expenses";
+import "./App.css"
 const DUMMY_EXPENSES = [
   {
     id: 'e1',
@@ -39,5 +40,5 @@ function App() {
       <Expenses items={expenses} />
     </>
   )
-};
+}
 export default App;

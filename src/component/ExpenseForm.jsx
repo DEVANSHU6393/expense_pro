@@ -46,7 +46,7 @@ const ExpenseForm=({stopEditingHandler,onSaveExpenseData})=>{
     </div>
     <div className='new-expense__actions'>
       <button type="button" onClick={stopEditingHandler} >Cancel</button>
-      <button type='submit'>Add Expense</button>
+      <button type='submit' onClick={SubmitHandler}>Add Expense</button>
     </div>
   </form>
 }
